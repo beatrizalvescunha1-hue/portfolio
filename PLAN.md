@@ -62,9 +62,14 @@ content drift from Figma. Two concrete known gaps:
 - [x] **align-about** — Added standard header (Beatriz Cunha wordmark + CONTACTS column
       + Work/About nav), made the header/columns **sticky**, updated footer.
 - [x] **align-project-final** (Opúsculo) — Merged the two mismatched `<main>` containers
-      so title and body share the same left margin; aligned bottom nav.
-- [ ] **align-project-mindfull / ssb / gorreana / stationery / social** — Structurally
-      aligned already; no owner comments flagged. Deep pixel polish deferred (optional).
+      so title and body share the same left margin; aligned bottom nav; indented the
+      title (`pl-12`) to line up with the body-text indentation; set the last two
+      (block-indented) paragraphs to the `#51514F` gray used in Figma.
+- [x] **align-project-mindfull / ssb / gorreana / stationery / social** — Unified the
+      project-page structure to match Opúsculo: single `max-w-[1600px]` main, `pl-12`
+      title header, and `#51514F` gray on the block-indented secondary paragraphs
+      (gorreana, stationery). Fixed Social's mislabeled tag (`Social Media Design` →
+      `Graphic Design`). Extracted a shared `ProjectNav` for the prev/next buttons.
 - [x] **align-shared** — Footer redesigned: added **Contact** link and
       **"@2026 Portfolio / The Neverending Project"** tagline beside the monogram.
 - [x] **apply-comments** — Applied all actionable Portuguese comments (about header,

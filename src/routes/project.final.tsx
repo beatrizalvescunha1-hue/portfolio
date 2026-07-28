@@ -66,14 +66,14 @@ function FinalPage() {
                 building a design career.
               </p>
 
-              <p className="pl-12">
+              <p className="pl-12 text-[#51514F]">
                 From research to print preparation, the project involved several practical stages:
                 identifying and selecting interviewees, developing interview scripts, conducting,
                 transcribing, and editing interviews, defining the grid and typographic system,
                 designing the layout in Adobe InDesign, preparing files for print and overseeing
                 assembly.
               </p>
-              <p className="pl-12">
+              <p className="pl-12 text-[#51514F]">
                 The final outcome was a publication with a composite format (ranging from A6 to
                 A4+), where each section corresponds to an individual interview, balancing content
                 diversity while reinforcing the overall concept and purpose.

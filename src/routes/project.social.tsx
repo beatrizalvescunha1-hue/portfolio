@@ -32,12 +32,12 @@ function SocialPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <main className="pt-10">
+      <main className="mx-auto max-w-[1600px] px-6 pt-10 sm:px-10">
         {/* Title */}
-        <header className="mx-5 mb-10 max-w-5xl px-6">
+        <header className="mb-10 pl-12">
           <div className="mb-8 flex items-center gap-3">
             <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
-              Social Media Design
+              Graphic Design
             </span>
 
             <span className="rounded-full border border-[#A3A19F] px-4 py-2 text-xs text-[#51514F]">
@@ -49,8 +49,7 @@ function SocialPage() {
             Social Media Design
           </h1>
         </header>
-      </main>
-      <main className="mx-auto max-w-[1600px] px-6 sm:px-10">
+
         {/* Content two-column */}
         <section className="mt-16 grid grid-cols-1 gap-12 pb-24 md:grid-cols-12 md:gap-10">
           {/* Left column */}

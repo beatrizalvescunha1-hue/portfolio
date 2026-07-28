@@ -36,9 +36,9 @@ function GorreanaPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <main className="pt-10">
+      <main className="mx-auto max-w-[1600px] px-6 pt-10 sm:px-10">
         {/* Title */}
-        <header className="mx-5 mb-10 max-w-5xl px-6">
+        <header className="mb-10 pl-12">
           <div className="mb-8 flex items-center gap-3">
             <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
               Communication Design
@@ -56,8 +56,7 @@ function GorreanaPage() {
             Rebranding Gorreana
           </h1>
         </header>
-      </main>
-      <main className="mx-auto max-w-[1600px] px-6 sm:px-10">
+
         {/* Content two-column */}
         <section className="mt-16 grid grid-cols-1 gap-12 pb-24 md:grid-cols-12 md:gap-10">
           {/* Left column */}
@@ -72,7 +71,7 @@ function GorreanaPage() {
                 reflected the brand’s tradition, legacy, values, and quality. It was equally
                 important to ensure consistency across all products.
               </p>
-              <p className="pl-12">
+              <p className="pl-12 text-[#51514F]">
                 Developed in partnership with a colleague, this project involved the creation of
                 both digital and physical assets. The rebranding included a redesigned logo with
                 primary and secondary versions, a defined color palette, typography selection,
