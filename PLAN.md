@@ -96,7 +96,7 @@ legend: ✅ done · 🔎 in review · ◑ partial · ○ deferred (ambiguous/nee
 | C6 | opúsculo | as imagens deveriam ir até à margem esq | images should reach the left margin | Ambiguous which image/edge; left as-is pending clarification | ○ |
 | C7 | opúsculo | mesmo o asset não tenho nada | even the asset, I have nothing | Missing source asset — nothing to place | ○ |
 | C8 | mindfull | não consegui colocar a imagem sem margem superior no código | couldn't place the image without a top margin | On the "Connecting general users with professionals" card, pulled the phone mockup up (`md:-mt-12`) to cancel the card's top padding so the image sits flush with the top grey border | ✅ |
-| C9 | general | no que diz respeito ao gradiente | regarding the gradient | Note tied to C8; gradient footer already present | ○ |
+| C9 | footer | no que diz respeito ao gradiente | regarding the gradient | Footer gradient reworked to match Figma: replaced the 3-stop white/`#FFD85C`/`#FF855B` gradient (visible yellow band + hue kink) with a smooth 6-stop white → cream → peach → red-orange (`#F26A42`) blend sampled from the Figma frame | ✅ |
 | C10 | mindfull | os títulos deviam ficar todos com a mesma margem | all titles should share the same margin | Standardised title/body left margins (Opúsculo fixed; pages use consistent containers) | ✅ |
 | C11 | home | entretanto isto já sofreu alterações, fica como está no VS | already changed; keep as in VS Code | Owner said keep current code | — |
 | C12 | home | gostava que o footer ficasse assim, no website está feinho | footer should look like this; on the site it's ugly | Footer redesigned: added Contact link + "@2026 Portfolio / The Neverending Project" tagline | ✅ |

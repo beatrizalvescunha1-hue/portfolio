@@ -4,7 +4,10 @@ export function SiteFooter() {
   return (
     <footer
       className="mt-60 px-8 pt-16 pb-6"
-      style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #FFD85C 70%, #FF855B 100%)" }}
+      style={{
+        background:
+          "linear-gradient(180deg, #FFFFFF 0%, #FFF7D6 25%, #FDE3AC 45%, #FABE77 65%, #F79556 82%, #F26A42 100%)",
+      }}
     >
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
         <h2 className="text-4xl font-medium leading-tight text-black md:text-5xl">
