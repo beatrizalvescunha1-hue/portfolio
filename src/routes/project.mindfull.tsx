@@ -215,7 +215,7 @@ function MindfullPage() {
             </span>
           </div>
 
-          <h1 className="mt-4 text-[26px] font-medium leading-[1.2] text-black md:text-[38px]">
+          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[38px]">
             Mindfull a digital solution
             <br className="hidden md:block" /> promoting mental health and self-care habits
           </h1>
@@ -356,7 +356,7 @@ function MindfullPage() {
               <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#F26B41]">
                 Features
               </p>
-              <h2 className="mt-4 text-[24px] font-medium leading-[1.25] text-black md:text-[30px]">
+              <h2 className="mt-4 text-[24px] font-normal leading-[1.25] text-black md:text-[30px]">
                 Exploring content intuitively
               </h2>
               <p className="mt-4 max-w-md text-[14px] leading-[1.6] text-[#51514F]">
@@ -390,7 +390,7 @@ function MindfullPage() {
           <div className="overflow-hidden rounded-2xl border border-[#A3A19F]/70 px-8 pb-8 md:px-12 md:pb-12">
             <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2">
               <div className="pt-8 md:pt-12">
-                <h2 className="text-[24px] font-medium leading-[1.25] text-black md:text-[28px]">
+                <h2 className="text-[24px] font-normal leading-[1.25] text-black md:text-[28px]">
                   Connecting general users with professionals
                 </h2>
                 <ul className="mt-10 space-y-5">
@@ -440,7 +440,7 @@ function MindfullPage() {
               <img src={mock3} alt="Mindfull dashboard" className="w-full max-w-[820px]" />
             </div>
             <div>
-              <h2 className="mt-4 text-[24px] font-medium leading-[1.25] text-black md:text-[30px]">
+              <h2 className="mt-4 text-[24px] font-normal leading-[1.25] text-black md:text-[30px]">
                 Publishing system for specialists
               </h2>
               <ul className="mt-8 space-y-4">

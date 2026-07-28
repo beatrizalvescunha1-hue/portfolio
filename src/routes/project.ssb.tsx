@@ -197,7 +197,7 @@ function ssbPage() {
             </span>
           </div>
 
-          <h1 className="mt-4 text-[26px] font-medium leading-[1.2] text-black md:text-[38px]">
+          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[38px]">
             Loyalty program app
             <br className="hidden md:block" /> for Street Smash Burgers
           </h1>
@@ -296,7 +296,7 @@ function ssbPage() {
               <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#AB3D3D]">
                 Two Experiences
               </p>
-              <h2 className="mt-4 text-[24px] font-medium leading-[1.25] text-black md:text-[30px]">
+              <h2 className="mt-4 text-[24px] font-normal leading-[1.25] text-black md:text-[30px]">
                 Simplicity-driven
               </h2>
               <p className="mt-4 max-w-md text-[14px] leading-[1.6] text-[#51514F]">
@@ -336,7 +336,7 @@ function ssbPage() {
           <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
               <div>
-                <h2 className="text-[24px] font-medium leading-[1.25] text-black md:text-[28px]">
+                <h2 className="text-[24px] font-normal leading-[1.25] text-black md:text-[28px]">
                   Experience-driven
                 </h2>
                 <ul className="mt-10 space-y-5">

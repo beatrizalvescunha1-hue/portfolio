@@ -52,7 +52,7 @@ function GorreanaPage() {
             </span>
           </div>
 
-          <h1 className="mt-4 text-[26px] font-medium leading-[1.2] text-black md:text-[38px]">
+          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[38px]">
             Rebranding Gorreana
           </h1>
         </header>

@@ -139,7 +139,7 @@ function AboutPage() {
       {/* Footer */}
       <footer className="mt-32 px-8 pt-16 pb-6 text-white">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <h2 className="text-4xl font-medium leading-tight md:text-5xl">
+          <h2 className="text-4xl font-normal leading-tight md:text-5xl">
             Thank you
             <br />
             for watching!!!

@@ -10,7 +10,7 @@ export function SiteFooter() {
       }}
     >
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-        <h2 className="text-4xl font-medium leading-tight text-black md:text-5xl">
+        <h2 className="text-4xl font-normal leading-tight text-black md:text-5xl">
           Thank you
           <br />
           for watching!!!
