@@ -413,7 +413,7 @@ function MindfullPage() {
                   ))}
                 </ul>
               </div>
-              <div className="flex items-start justify-center">
+              <div className="flex items-start justify-center md:-mt-12">
                 <img
                   src={mock2}
                   alt="Mindfull chat with a professional"

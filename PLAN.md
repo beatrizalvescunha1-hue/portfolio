@@ -95,7 +95,7 @@ legend: ✅ done · 🔎 in review · ◑ partial · ○ deferred (ambiguous/nee
 | C5 | opúsculo | gostava de criar esta endentação em alinhamento com o título | indentation aligned with the title | Indented the title header (`pl-12`, 3rem) to match the body text's first-line/block indentation so the text start aligns with the title | ✅ |
 | C6 | opúsculo | as imagens deveriam ir até à margem esq | images should reach the left margin | Ambiguous which image/edge; left as-is pending clarification | ○ |
 | C7 | opúsculo | mesmo o asset não tenho nada | even the asset, I have nothing | Missing source asset — nothing to place | ○ |
-| C8 | general | não consegui colocar a imagem sem margem superior no código | couldn't place the image without a top margin | Vague (no specific frame/image); pending clarification | ○ |
+| C8 | mindfull | não consegui colocar a imagem sem margem superior no código | couldn't place the image without a top margin | On the "Connecting general users with professionals" card, pulled the phone mockup up (`md:-mt-12`) to cancel the card's top padding so the image sits flush with the top grey border | ✅ |
 | C9 | general | no que diz respeito ao gradiente | regarding the gradient | Note tied to C8; gradient footer already present | ○ |
 | C10 | mindfull | os títulos deviam ficar todos com a mesma margem | all titles should share the same margin | Standardised title/body left margins (Opúsculo fixed; pages use consistent containers) | ✅ |
 | C11 | home | entretanto isto já sofreu alterações, fica como está no VS | already changed; keep as in VS Code | Owner said keep current code | — |
