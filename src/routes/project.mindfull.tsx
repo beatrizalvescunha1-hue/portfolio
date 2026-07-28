@@ -1,6 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
+import { ProjectNav } from "../components/project-nav";
 import mindfull1 from "../assets/mindfull1.png";
 import mindfull2 from "../assets/mindfull2.jpg";
 import mindfull3 from "../assets/mindfull3.jpeg";
@@ -11,7 +12,6 @@ import mock2 from "../assets/mock2.png";
 import mock3 from "../assets/mock3.png";
 import mock4 from "../assets/mock4.png";
 import type { ReactNode } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/project/mindfull")({
   head: () => ({
@@ -19,8 +19,7 @@ export const Route = createFileRoute("/project/mindfull")({
       { title: "Mindfull — Beatriz Cunha" },
       {
         name: "description",
-        content:
-          "Mindfull, a digital solution promoting mental health and self-care habits.",
+        content: "Mindfull, a digital solution promoting mental health and self-care habits.",
       },
       { property: "og:title", content: "Mindfull — Beatriz Cunha" },
       {
@@ -48,26 +47,20 @@ function InfoBox({
   secondary: ReactNode;
 }) {
   return (
-  <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
-    <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#A3A19F]">
-      {label}
-    </p>
+    <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
+      <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#A3A19F]">{label}</p>
 
-    <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
-      <div className="flex items-end">
-        <p className="text-[18px] leading-[1.55] text-[#292828] md:text-[20px]">
-          {primary}
-        </p>
-      </div>
+      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="flex items-end">
+          <p className="text-[18px] leading-[1.55] text-[#292828] md:text-[20px]">{primary}</p>
+        </div>
 
-      <div className="flex items-end">
-        <p className="text-[13px] leading-[1.6] text-[#51514F] md:text-[14px]">
-          {secondary}
-        </p>
+        <div className="flex items-end">
+          <p className="text-[13px] leading-[1.6] text-[#51514F] md:text-[14px]">{secondary}</p>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 }
 
 function SectionLabel({ children }: { children: ReactNode }) {
@@ -97,7 +90,16 @@ function Chevron() {
 
 function ArrowUp() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
       <line x1="12" y1="19" x2="12" y2="5" />
       <polyline points="5 12 12 5 19 12" />
     </svg>
@@ -106,7 +108,16 @@ function ArrowUp() {
 
 function ArrowDown() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
       <line x1="12" y1="5" x2="12" y2="19" />
       <polyline points="19 12 12 19 5 12" />
     </svg>
@@ -169,7 +180,8 @@ const connectingFeatures: string[] = [
   "Users can unlock personalized content with credits, giving them the freedom to explore at their own pace while ensuring professionals are fairly rewarded",
 ];
 
- {/* Research 
+{
+  /* Research 
   
   const publishing: string[] = [
   "Web platform for publishing and managing content",
@@ -180,30 +192,29 @@ const connectingFeatures: string[] = [
   
   
   
-  */}
+  */
+}
 
 function MindfullPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <main className="pt-10">
-        
-
         {/* Title */}
         <header className="mx-auto mb-10 max-w-5xl px-6">
           <div className="mb-8 flex items-center gap-3">
-           <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
-             UX/UI Design
-             </span>
+            <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
+              UX/UI Design
+            </span>
 
-          <span className="rounded-full border border-[#A3A19F] px-4 py-2 text-xs text-[#51514F]">
-             2025
-          </span>
-           <span className="rounded-full border border-[#A3A19F] px-4 py-2 text-xs text-[#51514F]">
-             Case Study
-          </span>
-            </div>
-          
+            <span className="rounded-full border border-[#A3A19F] px-4 py-2 text-xs text-[#51514F]">
+              2025
+            </span>
+            <span className="rounded-full border border-[#A3A19F] px-4 py-2 text-xs text-[#51514F]">
+              Case Study
+            </span>
+          </div>
+
           <h1 className="mt-4 text-[26px] font-medium leading-[1.2] text-black md:text-[38px]">
             Mindfull a digital solution
             <br className="hidden md:block" /> promoting mental health and self-care habits
@@ -212,11 +223,7 @@ function MindfullPage() {
 
         {/* Hero */}
         <figure className="w-full">
-          <img
-            src={mindfull1}
-            alt="Mindfull landing page mockup"
-            className="w-full"
-          />
+          <img src={mindfull1} alt="Mindfull landing page mockup" className="w-full" />
         </figure>
 
         {/* Brief */}
@@ -240,10 +247,7 @@ function MindfullPage() {
                   </p>
                   <ul className="mt-4 space-y-2 md:mt-8 md:space-y-3">
                     {col.items.map((item) => (
-                      <li
-                        key={item}
-                        className="text-[14px] leading-[1.5] text-[#292828]"
-                      >
+                      <li key={item} className="text-[14px] leading-[1.5] text-[#292828]">
                         {item}
                       </li>
                     ))}
@@ -270,9 +274,8 @@ function MindfullPage() {
               Challenge
             </p>
             <p className="mt-10 text-[22px] leading-[1.55] md:text-[28px]">
-              Building a practical, user-centered app that simplifies access to
-              trusted content, addressing real-life needs while reducing
-              friction and stress.
+              Building a practical, user-centered app that simplifies access to trusted content,
+              addressing real-life needs while reducing friction and stress.
             </p>
           </div>
         </section>
@@ -301,9 +304,7 @@ function MindfullPage() {
                   <div className="shrink-0 text-[#2F5E3A]">
                     <ArrowUp />
                   </div>
-                  <p className="text-[16px] font-medium text-[#1F3A25] md:text-[17px]">
-                    {title}
-                  </p>
+                  <p className="text-[16px] font-medium text-[#1F3A25] md:text-[17px]">{title}</p>
                 </div>
               ))}
             </div>
@@ -318,9 +319,7 @@ function MindfullPage() {
                   <div className="shrink-0 text-[#8C3A1F]">
                     <ArrowDown />
                   </div>
-                  <p className="text-[16px] font-medium text-[#4A1E10] md:text-[17px]">
-                    {title}
-                  </p>
+                  <p className="text-[16px] font-medium text-[#4A1E10] md:text-[17px]">{title}</p>
                 </div>
               ))}
             </div>
@@ -378,9 +377,7 @@ function MindfullPage() {
                     >
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    <span className="text-[14px] leading-[1.55] text-[#292828]">
-                      {f}
-                    </span>
+                    <span className="text-[14px] leading-[1.55] text-[#292828]">{f}</span>
                   </li>
                 ))}
               </ul>
@@ -411,20 +408,18 @@ function MindfullPage() {
                       >
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      <span className="text-[14px] leading-[1.6] text-[#292828]">
-                        {f}
-                      </span>
+                      <span className="text-[14px] leading-[1.6] text-[#292828]">{f}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-<div className="flex items-start justify-center">
-  <img
-    src={mock2}
-    alt="Mindfull chat with a professional"
-    className="block w-full max-w-[360px]"
-  />
-</div>
+              <div className="flex items-start justify-center">
+                <img
+                  src={mock2}
+                  alt="Mindfull chat with a professional"
+                  className="block w-full max-w-[360px]"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -438,19 +433,13 @@ function MindfullPage() {
           />
         </section>
 
-
         {/* Feature card — Publishing system for specialists */}
         <section className="mx-auto mt-24 max-w-5xl px-6">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div className="flex justify-center">
-              <img
-                src={mock3}
-                alt="Mindfull dashboard"
-                className="w-full max-w-[820px]"
-              />
+              <img src={mock3} alt="Mindfull dashboard" className="w-full max-w-[820px]" />
             </div>
             <div>
-              
               <h2 className="mt-4 text-[24px] font-medium leading-[1.25] text-black md:text-[30px]">
                 Publishing system for specialists
               </h2>
@@ -469,9 +458,7 @@ function MindfullPage() {
                     >
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    <span className="text-[14px] leading-[1.55] text-[#292828]">
-                      {f}
-                    </span>
+                    <span className="text-[14px] leading-[1.55] text-[#292828]">{f}</span>
                   </li>
                 ))}
               </ul>
@@ -479,27 +466,17 @@ function MindfullPage() {
           </div>
         </section>
 
-
- {/* Mindfull components */}
+        {/* Mindfull components */}
         <section className="mt-20">
-          <img
-            src={mindfull5}
-            alt="mindfull components"
-            className="w-full"
-          />
+          <img src={mindfull5} alt="mindfull components" className="w-full" />
         </section>
 
- {/* Mindfull screens */}
+        {/* Mindfull screens */}
         <section className="mt-0">
-          <img
-            src={mock4}
-            alt="mindfull screens"
-            className="w-full"
-          />
+          <img src={mock4} alt="mindfull screens" className="w-full" />
         </section>
 
-
-{/* Takeaways */}
+        {/* Takeaways */}
         <section className="mx-auto mt-20 max-w-5xl px-6">
           <InfoBox
             label="Takeaways"
@@ -508,25 +485,10 @@ function MindfullPage() {
           />
         </section>
 
-<div className="mx-auto mt-24 flex max-w-5xl items-center justify-between px-6 pb-16">
-  <Link
-    to="/work"
-    className="flex items-center gap-2 rounded-full border border-black px-6 py-2 text-sm text-black transition-colors hover:border-[#4000FF] hover:text-[#4000FF]"
-  >
-    <ArrowLeft size={16} />
-    Back to Work
-  </Link>
-
-  <Link
-    to="/project/ssb"
-    className="flex items-center gap-2 rounded-full border border-black px-6 py-2 text-sm text-black transition-colors hover:border-[#4000FF] hover:text-[#4000FF]"
-  >
-    Next Project
-    <ArrowRight size={16} />
-  </Link>
-</div>
-
-        
+        <ProjectNav
+          prev={{ to: "/work", label: "Back to Work" }}
+          next={{ to: "/project/ssb", label: "Next project" }}
+        />
       </main>
       <SiteFooter />
     </div>

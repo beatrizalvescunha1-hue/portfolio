@@ -1,10 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
+import { ProjectNav } from "../components/project-nav";
 import opusculo1 from "@/assets/opusculo1.png";
 import opusculo2 from "@/assets/opusculo2.png";
 import opusculo4 from "@/assets/opusculo4.png";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/project/final")({
   head: () => ({
@@ -110,23 +110,10 @@ function FinalPage() {
           </div>
         </section>
 
-        <div className="mt-24 flex items-center justify-between pb-16">
-          <Link
-            to="/project/ssb"
-            className="flex items-center gap-2 rounded-full border border-black px-6 py-2 text-sm text-black transition-colors hover:border-[#4000FF] hover:text-[#4000FF]"
-          >
-            <ArrowLeft size={16} />
-            Previous work
-          </Link>
-
-          <Link
-            to="/project/gorreana"
-            className="flex items-center gap-2 rounded-full border border-black px-6 py-2 text-sm text-black transition-colors hover:border-[#4000FF] hover:text-[#4000FF]"
-          >
-            Next Project
-            <ArrowRight size={16} />
-          </Link>
-        </div>
+        <ProjectNav
+          prev={{ to: "/project/ssb", label: "Previous project" }}
+          next={{ to: "/project/gorreana", label: "Next project" }}
+        />
       </main>
     </div>
   );
