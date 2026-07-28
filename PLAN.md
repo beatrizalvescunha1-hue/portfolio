@@ -87,7 +87,7 @@ legend: ✅ done · 🔎 in review · ◑ partial · ○ deferred (ambiguous/nee
 | C2 | about | os parágrafos com endentações são sticky | the indented paragraphs are sticky | Header + education/skills columns made `sticky top-0` | ✅ |
 | C3 | about | são sticky | they are sticky | Same as C2 (confirms sticky behaviour) | ✅ |
 | C4 | opúsculo | os botões ficaram diferentes no código… mais espaço branco | buttons differ in code; ideally like this; also more whitespace | Buttons centered & spaced closer; extracted shared `ProjectNav` component applied across all 6 project pages (also fixed stationery's broken next link) | ✅ |
-| C5 | opúsculo | gostava de criar esta endentação em alinhamento com o título | indentation aligned with the title | Merged the two `<main>` containers so title + body share one left margin | ✅ |
+| C5 | opúsculo | gostava de criar esta endentação em alinhamento com o título | indentation aligned with the title | Indented the title header (`pl-12`, 3rem) to match the body text's first-line/block indentation so the text start aligns with the title | ✅ |
 | C6 | opúsculo | as imagens deveriam ir até à margem esq | images should reach the left margin | Ambiguous which image/edge; left as-is pending clarification | ○ |
 | C7 | opúsculo | mesmo o asset não tenho nada | even the asset, I have nothing | Missing source asset — nothing to place | ○ |
 | C8 | general | não consegui colocar a imagem sem margem superior no código | couldn't place the image without a top margin | Vague (no specific frame/image); pending clarification | ○ |

@@ -32,7 +32,7 @@ function FinalPage() {
       <SiteHeader />
       <main className="mx-auto max-w-[1600px] px-6 pt-10 sm:px-10">
         {/* Title */}
-        <header className="mb-10">
+        <header className="mb-10 pl-12">
           <div className="mb-8 flex items-center gap-3">
             <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
               Editorial Design
