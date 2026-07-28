@@ -5,7 +5,7 @@ import { ProjectNav } from "../components/project-nav";
 import mindfull1 from "../assets/mindfull1.png";
 import mindfull2 from "../assets/mindfull2.jpg";
 import mindfull3 from "../assets/mindfull3.jpeg";
-import mindfull4 from "../assets/mindfull4.png";
+import mindfull4 from "../assets/mindfull4.jpg";
 import mindfull5 from "../assets/mindfull5.jpg";
 import mock1 from "../assets/mock1.png";
 import mock2 from "../assets/mock2.png";
