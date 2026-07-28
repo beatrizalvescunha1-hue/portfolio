@@ -86,7 +86,7 @@ legend: ✅ done · 🔎 in review · ◑ partial · ○ deferred (ambiguous/nee
 | C1 | about | não consegui colocar o mesmo header nesta página about | couldn't put the same header on the about page | Reusable `SiteHeader` (dark variant) now used on About; EDUCATION/SKILLS/CONTACTS moved to a centered section below the header | 🔎 In review |
 | C2 | about | os parágrafos com endentações são sticky | the indented paragraphs are sticky | Header + education/skills columns made `sticky top-0` | ✅ |
 | C3 | about | são sticky | they are sticky | Same as C2 (confirms sticky behaviour) | ✅ |
-| C4 | opúsculo | os botões ficaram diferentes no código… mais espaço branco | buttons differ in code; ideally like this; also more whitespace | Buttons centered & spaced closer; extracted shared `ProjectNav` component applied across all 6 project pages (also fixed stationery's broken next link) | 🔎 |
+| C4 | opúsculo | os botões ficaram diferentes no código… mais espaço branco | buttons differ in code; ideally like this; also more whitespace | Buttons centered & spaced closer; extracted shared `ProjectNav` component applied across all 6 project pages (also fixed stationery's broken next link) | ✅ |
 | C5 | opúsculo | gostava de criar esta endentação em alinhamento com o título | indentation aligned with the title | Merged the two `<main>` containers so title + body share one left margin | ✅ |
 | C6 | opúsculo | as imagens deveriam ir até à margem esq | images should reach the left margin | Ambiguous which image/edge; left as-is pending clarification | ○ |
 | C7 | opúsculo | mesmo o asset não tenho nada | even the asset, I have nothing | Missing source asset — nothing to place | ○ |
