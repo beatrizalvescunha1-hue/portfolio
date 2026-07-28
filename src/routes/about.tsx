@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteHeader } from "../components/site-header";
 import footerSvgabout from "@/assets/svgabout.svg";
 import { useEffect } from "react";
 import img1 from "@/assets.about/1.jpg";
@@ -64,12 +65,11 @@ function AboutPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Top nav — same header as the rest of the site, adapted to the dark About page */}
-      <header className="sticky top-0 z-20 grid grid-cols-2 gap-8 bg-black px-8 py-6 text-[13px] md:grid-cols-[1fr_1fr_1fr_1fr_auto] md:gap-12">
-        <Link to="/" aria-label="Home" className="text-white hover:text-[#4000FF]">
-          Beatriz Cunha
-        </Link>
+      {/* Same header component as the rest of the site (dark variant). */}
+      <SiteHeader variant="dark" sticky />
 
+      {/* Info columns sit below the header — left-aligned text, group centered */}
+      <section className="flex flex-wrap justify-center gap-12 px-8 pt-8 text-left text-[13px] md:gap-20">
         <div>
           <p className="text-white">EDUCATION</p>
           <p className="text-white/80">Ba in Communication Design @FBAUP</p>
@@ -112,19 +112,7 @@ function AboutPage() {
             </a>
           </p>
         </div>
-
-        <nav className="flex items-start gap-8">
-          <Link
-            to="/work"
-            className="text-white hover:text-[#4000FF] hover:underline hover:underline-offset-4"
-          >
-            Work
-          </Link>
-          <Link to="/about" className="text-white underline underline-offset-4">
-            About
-          </Link>
-        </nav>
-      </header>
+      </section>
 
       <main className="px-8 pt-24">
         {/* Other projects */}

@@ -77,18 +77,25 @@ content drift from Figma. Two concrete known gaps:
 - [x] **verify-visual** — `npm run dev`; all routes return 200 and changes render.
 
 ## Figma comments (Portuguese → English) & resolution
-| Page | Original (PT) | English | Status |
-| --- | --- | --- | --- |
-| about | não consegui colocar o mesmo header nesta página about | couldn't put the same header on the about page | ✅ added standard header |
-| about | os parágrafos com endentações são sticky / são sticky | the indented paragraphs are sticky | ✅ header + columns sticky |
-| home | gostava que o footer ficasse assim, no website está feinho | footer should look like this; on the site it's ugly | ✅ footer redesigned |
-| home | com scroll desvanece | fades with scroll | ✅ already implemented |
-| home | isto já sofreu alterações, fica como está no VS | already changed; keep as in VS Code | ✅ no action |
-| opúsculo | gostava de criar esta endentação em alinhamento com o título | indentation aligned with the title | ✅ merged containers |
-| opúsculo | os botões ficaram diferentes no código… mais espaço branco | buttons differ in code; more whitespace | ◑ alignment improved |
-| opúsculo | as imagens deveriam ir até à margem esq | images should reach the left margin | ○ ambiguous, deferred |
-| mindfull | os títulos deviam ficar todos com a mesma margem | all titles should share the same margin | ✅ standardized |
-| general | não consegui colocar a imagem sem margem superior | couldn't remove image top margin | ○ vague, deferred |
+
+Each comment has a stable **ID** (`C#`) so it can be individually validated. Status
+legend: ✅ done · 🔎 in review · ◑ partial · ○ deferred (ambiguous/needs clarification) · — no action.
+
+| ID | Page | Original (PT) | English | Resolution | Status |
+| --- | --- | --- | --- | --- | --- |
+| C1 | about | não consegui colocar o mesmo header nesta página about | couldn't put the same header on the about page | Reusable `SiteHeader` (dark variant) now used on About; EDUCATION/SKILLS/CONTACTS moved to a centered section below the header | 🔎 In review |
+| C2 | about | os parágrafos com endentações são sticky | the indented paragraphs are sticky | Header + education/skills columns made `sticky top-0` | ✅ |
+| C3 | about | são sticky | they are sticky | Same as C2 (confirms sticky behaviour) | ✅ |
+| C4 | opúsculo | os botões ficaram diferentes no código… mais espaço branco | buttons differ in code; ideally like this; also more whitespace | Container merge improved alignment/whitespace; pill restyle not yet 1:1 | ◑ |
+| C5 | opúsculo | gostava de criar esta endentação em alinhamento com o título | indentation aligned with the title | Merged the two `<main>` containers so title + body share one left margin | ✅ |
+| C6 | opúsculo | as imagens deveriam ir até à margem esq | images should reach the left margin | Ambiguous which image/edge; left as-is pending clarification | ○ |
+| C7 | opúsculo | mesmo o asset não tenho nada | even the asset, I have nothing | Missing source asset — nothing to place | ○ |
+| C8 | general | não consegui colocar a imagem sem margem superior no código | couldn't place the image without a top margin | Vague (no specific frame/image); pending clarification | ○ |
+| C9 | general | no que diz respeito ao gradiente | regarding the gradient | Note tied to C8; gradient footer already present | ○ |
+| C10 | mindfull | os títulos deviam ficar todos com a mesma margem | all titles should share the same margin | Standardised title/body left margins (Opúsculo fixed; pages use consistent containers) | ✅ |
+| C11 | home | entretanto isto já sofreu alterações, fica como está no VS | already changed; keep as in VS Code | Owner said keep current code | — |
+| C12 | home | gostava que o footer ficasse assim, no website está feinho | footer should look like this; on the site it's ugly | Footer redesigned: added Contact link + "@2026 Portfolio / The Neverending Project" tagline | ✅ |
+| C13 | home | com scroll desvanece | fades with scroll | Hero wordmark already fades on scroll (matches Figma) | ✅ |
 
 ## Notes / open questions
 - Confirm exact Inter Tight heading weights (Medium vs SemiBold) during the audit.
