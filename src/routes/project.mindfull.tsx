@@ -387,9 +387,9 @@ function MindfullPage() {
 
         {/* Feature card — Connecting users with professionals */}
         <section className="mx-auto mt-24 max-w-5xl px-6">
-          <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
+          <div className="overflow-hidden rounded-2xl border border-[#A3A19F]/70 px-8 pb-8 md:px-12 md:pb-12">
             <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2">
-              <div>
+              <div className="pt-8 md:pt-12">
                 <h2 className="text-[24px] font-medium leading-[1.25] text-black md:text-[28px]">
                   Connecting general users with professionals
                 </h2>
@@ -413,7 +413,7 @@ function MindfullPage() {
                   ))}
                 </ul>
               </div>
-              <div className="flex items-start justify-center md:-mt-12">
+              <div className="flex items-start justify-center">
                 <img
                   src={mock2}
                   alt="Mindfull chat with a professional"
