@@ -433,10 +433,10 @@ function MindfullPage() {
         </section>
 
         {/* Feature card — Publishing system for specialists */}
-        <section className="mx-auto mt-24 max-w-5xl px-6">
-          <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <section className="mx-auto mt-24 max-w-[96rem] px-6">
+          <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[2.7fr_1fr]">
             <div className="flex justify-center">
-              <img src={mock3} alt="Mindfull dashboard" className="w-full max-w-[820px]" />
+              <img src={mock3} alt="Mindfull dashboard" className="w-full" />
             </div>
             <div>
               <h2 className="mt-4 text-[24px] font-normal leading-[1.25] text-black md:text-[30px]">

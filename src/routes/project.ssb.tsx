@@ -358,11 +358,11 @@ function ssbPage() {
                   ))}
                 </ul>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center self-start -mt-8 md:-mt-12">
                 <img
                   src={mockssb2}
                   alt="Mindfull chat with a professional"
-                  className="w-full max-w-[320px]"
+                  className="w-full max-w-[440px]"
                 />
               </div>
             </div>
