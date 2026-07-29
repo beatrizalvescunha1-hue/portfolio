@@ -215,7 +215,7 @@ function MindfullPage() {
             </span>
           </div>
 
-          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[38px]">
+          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[40px]">
             Mindfull a digital solution
             <br className="hidden md:block" /> promoting mental health and self-care habits
           </h1>

@@ -36,9 +36,9 @@ function GorreanaPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <main className="mx-auto max-w-[1600px] px-6 pt-10 sm:px-10">
+      <main className="w-full px-0 pt-10 sm:px-0">
         {/* Title */}
-        <header className="mb-10 pl-12">
+        <header className="mb-10 pl-24">
           <div className="mb-8 flex items-center gap-3">
             <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
               Communication Design
@@ -52,7 +52,7 @@ function GorreanaPage() {
             </span>
           </div>
 
-          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[38px]">
+          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[40px]">
             Rebranding Gorreana
           </h1>
         </header>
@@ -60,8 +60,8 @@ function GorreanaPage() {
         {/* Content two-column */}
         <section className="mt-16 grid grid-cols-1 gap-12 pb-24 md:grid-cols-12 md:gap-10">
           {/* Left column */}
-          <aside className="md:col-span-6">
-            <div className="md:sticky md:top-28 space-y-8 text-[14px] leading-[1.7] text-black">
+          <aside className="md:col-span-6 pl-12">
+            <div className="md:sticky md:top-28 space-y-8 text-[16px] leading-[1.7] text-black">
               <p className="indent-12">
                 Gorrweana tea is produced at the oldest tea plantation in Europe, Azores, and is
                 widely recognized for its quality and organic traditional production methods.

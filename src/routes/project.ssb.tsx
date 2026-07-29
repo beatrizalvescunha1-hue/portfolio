@@ -197,7 +197,7 @@ function ssbPage() {
             </span>
           </div>
 
-          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[38px]">
+          <h1 className="mt-4 text-[26px] font-normal leading-[1.2] text-black md:text-[40px]">
             Loyalty program app
             <br className="hidden md:block" /> for Street Smash Burgers
           </h1>
