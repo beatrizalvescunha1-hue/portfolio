@@ -182,7 +182,7 @@ function ssbPage() {
       <SiteHeader />
       <main className="pt-10">
         {/* Title */}
-        <header className="mx-auto mb-10 max-w-5xl px-6">
+        <header className="mb-10 max-w-5xl px-8">
           <div className="mb-8 flex items-center gap-3">
             <span className="rounded-full bg-black px-4 py-2 text-xs font-medium text-white">
               UX/UI Design
@@ -208,7 +208,7 @@ function ssbPage() {
         </figure>
 
         {/* Brief */}
-        <section className="mx-auto mt-20 max-w-5xl px-6">
+        <section className="mt-20 max-w-5xl px-8">
           <InfoBox
             label="Brief"
             primary="This project was based on a brief from Street Smash Burgers to design a loyalty program that could scale internationally while reflecting the brand’s values of community and cultural impact."
@@ -217,7 +217,7 @@ function ssbPage() {
         </section>
 
         {/* Process */}
-        <section className="mx-auto mt-20 max-w-5xl px-6">
+        <section className="mt-20 max-w-5xl px-8">
           <SectionLabel>Process</SectionLabel>
           <div className="relative rounded-2xl border border-[#A3A19F]/70">
             <div className="grid grid-cols-1 divide-y divide-[#A3A19F]/60 md:grid-cols-4 md:divide-x md:divide-y-0">
@@ -260,7 +260,7 @@ function ssbPage() {
         </section>
 
         {/* Research */}
-        <section className="mx-auto mt-24 max-w-5xl px-6">
+        <section className="mt-24 max-w-5xl px-8">
           <InfoBox
             label="Research"
             primary="The first week focused on research: 37 long-form interview responses, 138 short questionnaires, and 10 on-site interviews, supported by desk research."
@@ -269,7 +269,7 @@ function ssbPage() {
         </section>
 
         {/* Research data */}
-        <section className="mx-auto mt-24 max-w-5xl px-6">
+        <section className="mt-24 max-w-5xl px-8">
           <InfoBox
             label="How much effort will they go through for a reward?"
             primary="The first week focused on research: 37 long-form interview responses, 138 short questionnaires, and 10 on-site interviews, supported by desk research."
@@ -286,7 +286,7 @@ function ssbPage() {
         </section>
 
         {/* Features */}
-        <section className="mx-auto mt-24 max-w-5xl px-6">
+        <section className="mt-24 max-w-5xl px-8">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div className="flex justify-center">
               <img src={mockssb1} alt="SSB home screen" className="w-full max-w-[320px]" />
@@ -331,7 +331,7 @@ function ssbPage() {
         </section>
 
         {/* Feature card — Experience-driven */}
-        <section className="mx-auto mt-24 max-w-5xl px-6">
+        <section className="mt-24 max-w-5xl px-8">
           <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
               <div>
@@ -375,7 +375,7 @@ function ssbPage() {
         </section>
 
         {/* Brief */}
-        <section className="mx-auto mt-20 max-w-5xl px-6">
+        <section className="mt-20 max-w-5xl px-8">
           <InfoBox
             label="Takeaways"
             primary="On this project I contributed across most stages. My role focused especially on both the app’s UI Design and on identifying weaknesses, helping the team refine and strengthen the concept, design and final presentation. "
