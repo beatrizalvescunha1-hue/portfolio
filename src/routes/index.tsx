@@ -29,14 +29,32 @@ function Index() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
+    let frame = 0;
+    const handleScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+        frame = 0;
+      });
+    };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, []);
 
-  const opacity = Math.max(1 - scrollY / 600, 0);
+  // Eased (smoothstep) fade over a longer scroll distance for a gentler transition.
+  const progress = Math.min(Math.max(scrollY / 600, 0), 1);
+  const eased = progress * progress * (3 - 2 * progress);
+  const opacity = 1 - eased;
+
+  // The wordmark fades more gradually (over a longer scroll distance) than the circles.
+  const wordmarkProgress = Math.min(Math.max(scrollY / 950, 0), 1);
+  const wordmarkEased = wordmarkProgress * wordmarkProgress * (3 - 2 * wordmarkProgress);
+  const wordmarkOpacity = 1 - wordmarkEased;
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -52,7 +70,10 @@ function Index() {
             <span>↓</span>
           </div>
 
-          <div className="mt-16 flex items-center justify-center">
+          <div
+            className="mt-16 flex items-center justify-center transition-opacity duration-75"
+            style={{ opacity }}
+          >
             {["#B7CDB0", "#B5342E", "#F4B8CE", "#2B1A0E", "#2E6DA4", "#F26B41"].map((c, i) => (
               <span
                 key={c}
@@ -67,8 +88,8 @@ function Index() {
           </div>
 
           <div
-            className="mt-0 w-full transition-opacity duration-150"
-            style={{ opacity: opacity * 0.7 }}
+            className="mt-0 w-full transition-opacity duration-75"
+            style={{ opacity: wordmarkOpacity * 0.7 }}
           >
             <img src={heroLogo} alt="Beatriz Cunha" className="w-full select-none" />
           </div>
