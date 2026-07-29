@@ -226,7 +226,7 @@ function MindfullPage() {
         </figure>
 
         {/* Brief */}
-        <section className="mt-20 max-w-5xl px-8">
+        <section className="mx-auto mt-20 max-w-5xl px-8">
           <InfoBox
             label="Brief"
             primary="Mindfull is a digital solution that helps users take care of their well-being and develop healthy mental and mindful habits."
@@ -235,7 +235,7 @@ function MindfullPage() {
         </section>
 
         {/* Process */}
-        <section className="mt-20 max-w-5xl px-8">
+        <section className="mx-auto mt-20 max-w-5xl px-8">
           <SectionLabel>Process</SectionLabel>
           <div className="relative rounded-2xl border border-[#A3A19F]/70">
             <div className="grid grid-cols-1 divide-y divide-[#A3A19F]/60 md:grid-cols-4 md:divide-x md:divide-y-0">
@@ -280,7 +280,7 @@ function MindfullPage() {
         </section>
 
         {/* Research */}
-        <section className="mt-24 max-w-5xl px-8">
+        <section className="mx-auto mt-24 max-w-5xl px-8">
           <InfoBox
             label="Research"
             primary="We conducted 6 interviews with people aged 22-34, the target audience, to better understand their routines, habits, and approaches to self-care and mindfulness, as well as how digital tools fit into their lives."
@@ -289,7 +289,7 @@ function MindfullPage() {
         </section>
 
         {/* Pain Points and Opportunities */}
-        <section className="mt-24 max-w-5xl px-8">
+        <section className="mx-auto mt-24 max-w-5xl px-8">
           <SectionLabel>Pain Points and Opportunities</SectionLabel>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
             <div className="grid grid-rows-4 gap-4">
@@ -342,7 +342,7 @@ function MindfullPage() {
         </section>
 
         {/* Features */}
-        <section className="mt-24 max-w-5xl px-8">
+        <section className="mx-auto mt-24 max-w-5xl px-8">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div className="flex justify-center">
               <img
@@ -385,7 +385,7 @@ function MindfullPage() {
         </section>
 
         {/* Feature card — Connecting users with professionals */}
-        <section className="mt-24 max-w-5xl px-8">
+        <section className="mx-auto mt-24 max-w-5xl px-8">
           <div className="overflow-hidden rounded-2xl border border-[#A3A19F]/70 px-8 pb-8 md:px-12 md:pb-12">
             <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2">
               <div className="pt-8 md:pt-12">
@@ -476,7 +476,7 @@ function MindfullPage() {
         </section>
 
         {/* Takeaways */}
-        <section className="mt-20 max-w-5xl px-8">
+        <section className="mx-auto mt-20 max-w-5xl px-8">
           <InfoBox
             label="Takeaways"
             primary="Research guided every decicion, ensuring our solution was evidence-based. We designed the app and website with a focus on an intuitive user experience, applying principles of acessibility, consistency, and clear visual hierarchy."

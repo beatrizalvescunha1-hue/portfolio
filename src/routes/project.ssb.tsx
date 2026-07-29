@@ -43,10 +43,10 @@ function InfoBox({
   secondary: ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
+    <div className="rounded-lg border border-[#A3A19F]/70 p-3 md:p-4">
       <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#A3A19F]">{label}</p>
 
-      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="flex items-end">
           <p className="text-[18px] leading-[1.55] text-[#292828] md:text-[20px]">{primary}</p>
         </div>
@@ -208,7 +208,7 @@ function ssbPage() {
         </figure>
 
         {/* Brief */}
-        <section className="mt-20 max-w-5xl px-8">
+        <section className="mx-auto mt-20 max-w-5xl px-8">
           <InfoBox
             label="Brief"
             primary="This project was based on a brief from Street Smash Burgers to design a loyalty program that could scale internationally while reflecting the brand’s values of community and cultural impact."
@@ -217,12 +217,12 @@ function ssbPage() {
         </section>
 
         {/* Process */}
-        <section className="mt-20 max-w-5xl px-8">
+        <section className="mx-auto mt-20 max-w-5xl px-8">
           <SectionLabel>Process</SectionLabel>
-          <div className="relative rounded-2xl border border-[#A3A19F]/70">
+          <div className="relative rounded-lg border border-[#A3A19F]/70">
             <div className="grid grid-cols-1 divide-y divide-[#A3A19F]/60 md:grid-cols-4 md:divide-x md:divide-y-0">
               {processColumns.map((col) => (
-                <div key={col.title} className="p-6 md:p-8">
+                <div key={col.title} className="p-3 md:p-4">
                   <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#A3A19F]">
                     {col.title}
                   </p>
@@ -260,7 +260,7 @@ function ssbPage() {
         </section>
 
         {/* Research */}
-        <section className="mt-24 max-w-5xl px-8">
+        <section className="mx-auto mt-24 max-w-5xl px-8">
           <InfoBox
             label="Research"
             primary="The first week focused on research: 37 long-form interview responses, 138 short questionnaires, and 10 on-site interviews, supported by desk research."
@@ -269,12 +269,33 @@ function ssbPage() {
         </section>
 
         {/* Research data */}
-        <section className="mt-24 max-w-5xl px-8">
-          <InfoBox
-            label="How much effort will they go through for a reward?"
-            primary="The first week focused on research: 37 long-form interview responses, 138 short questionnaires, and 10 on-site interviews, supported by desk research."
-            secondary="From this, we identified key insights which shaped design decisions."
-          />
+        <section className="mx-auto mt-24 max-w-5xl px-8">
+          <div className="rounded-lg bg-[#F1F0ED] p-3 md:p-4">
+            <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+              <div className="flex flex-col">
+                <p className="min-h-[3rem] text-[13px] leading-[1.5] text-[#8A8A88]">
+                  How much effort will they go through
+                  <br />
+                  for a reward?
+                </p>
+                <p className="mt-20 text-[15px] leading-[1.5] text-[#292828]">
+                  41% said very little, the rest said{" "}
+                  <span className="underline underline-offset-4">
+                    if it&apos;s worth it, they&apos;ll put effort in.
+                  </span>
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <p className="min-h-[3rem] text-[13px] leading-[1.5] text-[#8A8A88]">
+                  Why do people comeback?
+                </p>
+                <p className="mt-20 text-[15px] leading-[1.5] text-[#292828]">
+                  Free items but also{" "}
+                  <span className="underline underline-offset-4">experiences</span>.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* post-its*/}
@@ -286,7 +307,7 @@ function ssbPage() {
         </section>
 
         {/* Features */}
-        <section className="mt-24 max-w-5xl px-8">
+        <section className="mx-auto mt-24 max-w-5xl px-8">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div className="flex justify-center">
               <img src={mockssb1} alt="SSB home screen" className="w-full max-w-[320px]" />
@@ -331,14 +352,14 @@ function ssbPage() {
         </section>
 
         {/* Feature card — Experience-driven */}
-        <section className="mt-24 max-w-5xl px-8">
-          <div className="rounded-2xl border border-[#A3A19F]/70 p-8 md:p-12">
-            <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
-              <div>
+        <section className="mx-auto mt-24 max-w-5xl px-8">
+          <div className="rounded-lg border border-[#A3A19F]/70 p-8 md:p-12">
+            <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+              <div className="flex h-full flex-col justify-between">
                 <h2 className="text-[24px] font-normal leading-[1.25] text-black md:text-[28px]">
                   Experience-driven
                 </h2>
-                <ul className="mt-10 space-y-5">
+                <ul className="mt-16 space-y-5">
                   {experience.map((f) => (
                     <li key={f} className="flex items-start gap-3">
                       <svg
@@ -375,7 +396,7 @@ function ssbPage() {
         </section>
 
         {/* Brief */}
-        <section className="mt-20 max-w-5xl px-8">
+        <section className="mx-auto mt-20 max-w-5xl px-8">
           <InfoBox
             label="Takeaways"
             primary="On this project I contributed across most stages. My role focused especially on both the app’s UI Design and on identifying weaknesses, helping the team refine and strengthen the concept, design and final presentation. "
