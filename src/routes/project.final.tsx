@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "../components/site-header";
-import { SiteFooter } from "../components/site-footer";
 import { ProjectNav } from "../components/project-nav";
 import opusculo1 from "@/assets/opusculo1.png";
 import opusculo2 from "@/assets/opusculo2.png";

@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "../components/site-header";
-import { SiteFooter } from "../components/site-footer";
 import { ProjectNav } from "../components/project-nav";
 import ssb1 from "../assets/ssb1.jpg";
 import ssb2 from "../assets/ssb2.png";
@@ -389,7 +388,6 @@ function ssbPage() {
           next={{ to: "/project/final", label: "Next project" }}
         />
       </main>
-      <SiteFooter />
     </div>
   );
 }

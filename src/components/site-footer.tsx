@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+import { Linkedin } from "lucide-react";
 import footerSvg from "@/assets/svg.svg";
 
 export function SiteFooter() {
@@ -18,26 +20,32 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-8 text-sm text-black md:justify-items-start">
           <ul className="space-y-3">
             <li>
-              <FooterLink href="/">Home</FooterLink>
+              <FooterLink to="/">Home</FooterLink>
             </li>
             <li>
-              <FooterLink href="/work">Work</FooterLink>
+              <FooterLink to="/work">Work</FooterLink>
             </li>
             <li>
-              <FooterLink href="/about">About</FooterLink>
-            </li>
-            <li>
-              <FooterLink href="mailto:beatrizalvescunha1@gmail.com">Contact</FooterLink>
+              <FooterLink to="/about">About</FooterLink>
             </li>
           </ul>
           <ul className="space-y-3">
             <li>
-              <ExtLink href="https://www.linkedin.com/in/beatriz-cunha-20aaa41a6/">
+              <ExtLink
+                href="https://www.linkedin.com/in/beatriz-cunha-20aaa41a6/"
+                label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" aria-hidden />
                 Linkedin
+                <span aria-hidden>↗</span>
               </ExtLink>
             </li>
             <li>
-              <ExtLink href="https://www.behance.net/beatriz_cunha/">Behance</ExtLink>
+              <ExtLink href="https://www.behance.net/beatriz_cunha/" label="Behance">
+                <BehanceIcon className="h-5 w-5" aria-hidden />
+                Behance
+                <span aria-hidden>↗</span>
+              </ExtLink>
             </li>
           </ul>
         </div>
@@ -46,11 +54,6 @@ export function SiteFooter() {
       <div className="mt-20 flex items-end justify-between text-xs text-black">
         <div className="flex items-end gap-3">
           <img src={footerSvg} alt="Beatriz Alves Cunha" className="h-12 w-auto" />
-          <p className="leading-tight text-black/80">
-            @2026 Portfolio
-            <br />
-            The Neverending Project
-          </p>
         </div>
 
         <p>
@@ -67,24 +70,53 @@ export function SiteFooter() {
   );
 }
 
-function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+function FooterLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
-    <a href={href} className="hover:text-[#4000FF] hover:underline hover:underline-offset-4">
+    <Link to={to} className="hover:text-[#4000FF] hover:underline hover:underline-offset-4">
       {children}
-    </a>
+    </Link>
   );
 }
 
-function ExtLink({ href, children }: { href: string; children: React.ReactNode }) {
+function ExtLink({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex items-center gap-1 hover:text-[#4000FF] hover:underline hover:underline-offset-4"
+      aria-label={label}
+      className="inline-flex items-center gap-1.5 text-black transition-colors hover:text-[#4000FF] hover:underline hover:underline-offset-4"
     >
       {children}
-      <span aria-hidden>↗</span>
     </a>
+  );
+}
+
+function BehanceIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M2 7h4.5a2.5 2.5 0 0 1 0 5H2z" />
+      <path d="M2 12h5a2.5 2.5 0 0 1 0 5H2z" />
+      <path d="M15 8h5" />
+      <path d="M22 14a3 3 0 1 0-5.83 1" />
+      <path d="M15 14h7" />
+    </svg>
   );
 }

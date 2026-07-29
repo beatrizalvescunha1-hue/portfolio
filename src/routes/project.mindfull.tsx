@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "../components/site-header";
-import { SiteFooter } from "../components/site-footer";
 import { ProjectNav } from "../components/project-nav";
 import mindfull1 from "../assets/mindfull1.png";
 import mindfull2 from "../assets/mindfull2.jpg";
@@ -490,7 +489,6 @@ function MindfullPage() {
           next={{ to: "/project/ssb", label: "Next project" }}
         />
       </main>
-      <SiteFooter />
     </div>
   );
 }

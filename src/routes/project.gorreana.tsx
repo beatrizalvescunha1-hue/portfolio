@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "../components/site-header";
-import { SiteFooter } from "../components/site-footer";
 import { ProjectNav } from "../components/project-nav";
 import gorreana1 from "@/assets/gorreana1.jpg";
 import gorreana2 from "@/assets/gorreana2.jpg";
