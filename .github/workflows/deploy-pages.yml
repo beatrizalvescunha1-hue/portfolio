@@ -1,0 +1,66 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Deploy on every push to the default branch.
+  push:
+    branches: [main]
+  # Allow manual runs from the Actions tab.
+  workflow_dispatch:
+
+# Grant the token the permissions the Pages deploy needs.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only keep the latest deploy running.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build static site
+        env:
+          # Opt into the static (prerendered SPA shell) build.
+          STATIC_BUILD: "true"
+          # GitHub project pages are served from /<repo>/.
+          BASE_PATH: /portfolio/
+        run: bun run build
+
+      - name: Prepare Pages output
+        run: |
+          cd dist/client
+          # GitHub Pages needs an index.html entry point and a 404.html
+          # fallback so client-side (deep-link) routes resolve to the SPA shell.
+          cp _shell.html index.html
+          cp _shell.html 404.html
+          # Disable Jekyll so the assets/ dir and _-prefixed files are served.
+          touch .nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/client
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
