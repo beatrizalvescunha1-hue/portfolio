@@ -72,7 +72,7 @@ function AboutPage() {
       <section className="flex flex-wrap justify-center gap-12 px-8 pt-8 text-left text-[13px] md:gap-20">
         <div>
           <p className="text-white">EDUCATION</p>
-          <p className="text-white/80">Ba in Communication Design @FBAUP</p>
+          <p className="text-white/80">BA in Communication Design @FBAUP</p>
           <p className="text-white/80">UX/UI Course @EDIT Porto</p>
         </div>
         <div>
@@ -162,22 +162,8 @@ function AboutPage() {
                   Work
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="hover:text-[#4000FF] hover:underline hover:underline-offset-4"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="mailto:beatrizalvescunha1@gmail.com"
-                  className="hover:text-[#4000FF] hover:underline hover:underline-offset-4"
-                >
-                  Contact
-                </a>
-              </li>
+
+            
             </ul>
             <ul className="space-y-3">
               <li>
@@ -206,11 +192,7 @@ function AboutPage() {
         <div className="mt-20 flex items-end justify-between text-xs">
           <div className="flex items-end gap-3">
             <img src={footerSvgabout} alt="Beatriz Alves Cunha" className="h-12 w-auto" />
-            <p className="leading-tight text-white/80">
-              @2026 Portfolio
-              <br />
-              The Neverending Project
-            </p>
+            
           </div>
 
           <p className="text-white/80">

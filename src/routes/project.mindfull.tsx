@@ -179,6 +179,12 @@ const connectingFeatures: string[] = [
   "Users can unlock personalized content with credits, giving them the freedom to explore at their own pace while ensuring professionals are fairly rewarded",
 ];
 
+const publishing: string[] = [
+  "Web plataform for publishing and managing content",
+  "Landing page to introduce the product while serving as an entry point for professionals",
+  "Dashboard centralizes key actions",
+];
+
 {
   /* Research 
   
@@ -443,7 +449,7 @@ function MindfullPage() {
                 Publishing system for specialists
               </h2>
               <ul className="mt-8 space-y-4">
-                {features.map((f) => (
+                {publishing.map((f) => (
                   <li key={f} className="flex items-start gap-3">
                     <svg
                       viewBox="0 0 24 24"
@@ -479,8 +485,8 @@ function MindfullPage() {
         <section className="mx-auto mt-20 max-w-5xl px-8">
           <InfoBox
             label="Takeaways"
-            primary="Research guided every decicion, ensuring our solution was evidence-based. We designed the app and website with a focus on an intuitive user experience, applying principles of acessibility, consistency, and clear visual hierarchy."
-            secondary="The development of this project highlighted the importance of clear objectives, strong communication, and close, collaboration, especially when working under tight contraints."
+            primary="Research guided every decision, ensuring our solution was evidence-based. We designed the app and website with a focus on an intuitive user experience, applying principles of acessibility, consistency, and clear visual hierarchy."
+            secondary="The development of this project highlighted the importance of clear objectives, strong communication, and close collaboration, especially when working under time contraints."
           />
         </section>
 

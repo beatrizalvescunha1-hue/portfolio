@@ -62,7 +62,7 @@ function GorreanaPage() {
           <aside className="md:col-span-6 pl-8">
             <div className="md:sticky md:top-28 space-y-8 text-[16px] leading-[1.7] text-black">
               <p className="indent-12">
-                Gorrweana tea is produced at the oldest tea plantation in Europe, Azores, and is
+                Gorreana tea is produced at the oldest tea plantation in Europe (Azores), and is
                 widely recognized for its quality and organic traditional production methods.
               </p>
               <p className="indent-12">
@@ -150,7 +150,7 @@ function GorreanaPage() {
         </section>
 
         <ProjectNav
-          prev={{ to: "/work", label: "Previous work" }}
+          prev={{ to: "/project/final", label: "Previous project" }}
           next={{ to: "/project/stationery", label: "Next project" }}
         />
       </main>

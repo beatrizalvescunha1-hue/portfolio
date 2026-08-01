@@ -4,6 +4,7 @@ import { ProjectNav } from "../components/project-nav";
 import wedding1 from "@/assets/wedding1.jpg";
 import wedding2 from "@/assets/wedding2.jpg";
 import wedding3 from "@/assets/wedding3.jpg";
+import wedding4 from "@/assets/wedding4.jpg";
 
 export const Route = createFileRoute("/project/stationery")({
   head: () => ({
@@ -84,6 +85,14 @@ function StationeryPage() {
             <figure className="overflow-hidden">
               <img
                 src={wedding3}
+                alt="Save the date"
+                className="w-full h-auto block"
+                loading="lazy"
+              />
+            </figure>
+                        <figure className="overflow-hidden">
+              <img
+                src={wedding4}
                 alt="Save the date"
                 className="w-full h-auto block"
                 loading="lazy"

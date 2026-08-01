@@ -56,8 +56,8 @@ function Index() {
       <main>
         <section className="flex flex-col items-center px-6 pt-44">
           <p className="hero-text text-center text-[18px] text-black">
-            (communication design
-            <br />& ux/ui design)
+            (communication designer
+            <br />& ux/ui designer)
           </p>
 
           <div className="scroll-indicator">

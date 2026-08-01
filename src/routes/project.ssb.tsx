@@ -142,8 +142,10 @@ const processColumns: { title: string; items: string[] }[] = [
   },
   {
     title: "Test (building)",
-    items: ["UI Kit, Prototype"],
+    items: ["UI Kit", 
+           "Prototype", ],
   },
+  
 ];
 
 const simplicity: string[] = [
@@ -154,7 +156,7 @@ const simplicity: string[] = [
 ];
 
 const experience: string[] = [
-  "Smashbot to generate fun in-store challenges with users prompts",
+  "Smashbot to generate fun in-store challenges with users' prompts",
   "Discover, create, vote on, and register for in-store challenges",
   "Foster a sense of community and brand loyalty by creating memorable, emotionally engaging experiences",
   "Individual or crew-based challenges",
